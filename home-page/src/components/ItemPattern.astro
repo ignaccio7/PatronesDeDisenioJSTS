@@ -1,0 +1,25 @@
+---
+interface Props {
+  name: string;
+  description: string;
+  image: string;
+}
+
+const { name, description, image } = Astro.props;
+---
+
+<a href={name}>
+  <article
+    class="flex gap-2 cursor-pointer py-4 px-2 hover:shadow-lg transition-all duration-200 group"
+  >
+    <picture
+      class="min-w-[100px] h-auto aspect-square group-hover:scale-110 transition-all duration-200"
+    >
+      <img src={image} alt={`Imagen del patron ${name}`} transition:name={`image-${name}`}/>
+    </picture>
+    <div class="content line-clamp-5 text-justify">
+      <h3 class="text-xl font-bold text-gray-700" transition:name={`title-${name}`}>{name}</h3>
+      <p class="text-sm text-gray-800">{description}</p>
+    </div>
+  </article>
+</a>

@@ -1,0 +1,52 @@
+---
+import { getPatternByName, getNamesPatterns } from "src/services/patterns";
+import Layout from "../../layouts/Layout.astro";
+import { type Pattern } from "src/types/types";
+import CodePattern from "../../components/CodePattern.md";
+import { Code } from "astro:components";
+
+const { name } = Astro.params;
+
+const pattern = (await getPatternByName({ name })) as Pattern;
+const { description, image, docs } = pattern;
+
+const archivesJS = await Promise.all(docs.js.map((d) => {
+  return fetch(`${d}`).then((res) => res.text());
+}));
+
+const codeJS = archivesJS.map(djs => {
+  return djs.trim()
+})
+
+export const getStaticPaths = async () => {
+  // llamamos a una api para saber todas las ids a generar
+  const namesPatterns = await getNamesPatterns();
+  return namesPatterns.map((n) => {
+    return { params: { name: n } };
+  });
+  // return [{
+  //     params: { name:"Singleton" }
+  // }];
+};
+---
+
+<Layout title="abc">
+  <header class="px-4 pt-8 pb-4 flex items-center gap-4">
+    <img src={image} alt={`Imagen del patron ${name}`} transition:name={`image-${name}`}/>
+    <h1 transition:name={`title-${name}`} class="text-5xl font-bold">{name}</h1>
+  </header>
+  <main class="px-8 text-xl text-pretty">
+    <p>{description}</p>
+    <div class="max-w-[80%] overflow-x-auto text-sm flex flex-col gap-8">
+        {
+            codeJS.map(c =>{
+                return(                    
+                    // <Code code={`const foo = 'bar';`} lang="js"/>
+                    <Code code={c} lang="js"/>
+                )
+            })
+        }
+    </div>
+  </main>
+  <br><br><br><br><br>
+</Layout>

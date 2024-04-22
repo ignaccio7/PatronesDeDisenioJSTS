@@ -1,0 +1,27 @@
+---
+import { getPatterns } from 'src/services/patterns'
+import ItemPattern from './ItemPattern.astro'
+
+
+interface Props {
+    title: string
+    type: string
+}
+
+const { title, type } = Astro.props
+
+const patterns = await getPatterns({ type })
+
+---
+<section class="max-w-[800px] m-auto">
+    <h2 class="text-3xl font-bold text-center text-gray-800 underline mb-4">{title}</h2>
+    <div class="content grid grid-cols-2 gap-8">
+        {
+            patterns.map(({name, description, image}) => {                               
+                return(
+                    <ItemPattern name={name} description={description} image={image}/>
+                )
+            })          
+        }
+    </div>
+</section>
