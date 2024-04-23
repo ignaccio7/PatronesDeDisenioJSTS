@@ -10,6 +10,8 @@ const { name } = Astro.params;
 const pattern = (await getPatternByName({ name })) as Pattern;
 const { description, image, docs } = pattern;
 
+const pathImage = new URL(Astro.request.url,image)
+
 const archivesJS = await Promise.all(docs.js.map((d) => {
   return fetch(`${d}`).then((res) => res.text());
 }));
@@ -32,7 +34,7 @@ export const getStaticPaths = async () => {
 
 <Layout title="abc">
   <header class="px-4 pt-8 pb-4 flex items-center gap-4">
-    <img src={image} alt={`Imagen del patron ${name}`} transition:name={`image-${name}`}/>
+    <img src={pathImage.toString()} alt={`Imagen del patron ${name}`} transition:name={`image-${name}`}/>
     <h1 transition:name={`title-${name}`} class="text-5xl font-bold">{name}</h1>
   </header>
   <main class="px-8 text-xl text-pretty">
