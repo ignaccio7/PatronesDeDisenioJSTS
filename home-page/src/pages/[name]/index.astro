@@ -10,7 +10,7 @@ const { name } = Astro.params;
 const pattern = (await getPatternByName({ name })) as Pattern;
 const { description, image, docs } = pattern;
 
-const pathImage = new URL(Astro.request.url,image)
+const pathImage = new URL(`${Astro.site}/${image}/`)
 
 const archivesJS = await Promise.all(docs.js.map((d) => {
   return fetch(`${d}`).then((res) => res.text());
