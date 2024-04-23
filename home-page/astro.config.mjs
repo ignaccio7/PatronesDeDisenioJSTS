@@ -1,10 +1,9 @@
 import { defineConfig } from 'astro/config';
-
 import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://ignaccio7.github.io',
-  base: '/home-page/',
+  base: '/PatronesDeDisenioJSTS/',
   integrations: [tailwind()]
 });
