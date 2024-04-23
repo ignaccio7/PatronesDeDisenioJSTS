@@ -25,4 +25,5 @@ jobs:
         with:
           branch: gh-pages  # This is the branch GitHub Pages will deploy from
           folder: home-page/dist  # This is the folder your built site is located
+          token: ${{ secrets.GITHUB_TOKEN }}
 
