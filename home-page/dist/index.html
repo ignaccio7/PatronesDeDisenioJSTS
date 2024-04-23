@@ -1,0 +1,533 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.6.3"><title>Patrones de diseño.</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/home-page/dist/_astro/index.C7hi7nHx.css">
+<style>@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0}}@keyframes astroFadeOut{to{opacity:0}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><script type="module" src="/home-page/dist/_astro/hoisted.MGRYCVo7.js"></script><style>[data-astro-transition-scope="astro-ae2a5lwh-1"] { view-transition-name: image-Singleton; }@layer astro { ::view-transition-old(image-Singleton) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(image-Singleton) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(image-Singleton) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(image-Singleton) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ae2a5lwh-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ae2a5lwh-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ae2a5lwh-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ae2a5lwh-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ae2a5lwh-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ae2a5lwh-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ae2a5lwh-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ae2a5lwh-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-6bo63epg-2"] { view-transition-name: title-Singleton; }@layer astro { ::view-transition-old(title-Singleton) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(title-Singleton) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(title-Singleton) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(title-Singleton) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6bo63epg-2"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6bo63epg-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6bo63epg-2"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6bo63epg-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6bo63epg-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6bo63epg-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6bo63epg-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6bo63epg-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ae2a5lwh-3"] { view-transition-name: image-Builder; }@layer astro { ::view-transition-old(image-Builder) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(image-Builder) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(image-Builder) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(image-Builder) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ae2a5lwh-3"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ae2a5lwh-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ae2a5lwh-3"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ae2a5lwh-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ae2a5lwh-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ae2a5lwh-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ae2a5lwh-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ae2a5lwh-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-6bo63epg-4"] { view-transition-name: title-Builder; }@layer astro { ::view-transition-old(title-Builder) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(title-Builder) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(title-Builder) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(title-Builder) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6bo63epg-4"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6bo63epg-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6bo63epg-4"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6bo63epg-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6bo63epg-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6bo63epg-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6bo63epg-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6bo63epg-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ae2a5lwh-5"] { view-transition-name: image-Observer; }@layer astro { ::view-transition-old(image-Observer) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(image-Observer) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(image-Observer) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(image-Observer) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ae2a5lwh-5"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ae2a5lwh-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ae2a5lwh-5"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ae2a5lwh-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ae2a5lwh-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ae2a5lwh-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ae2a5lwh-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ae2a5lwh-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-6bo63epg-6"] { view-transition-name: title-Observer; }@layer astro { ::view-transition-old(title-Observer) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(title-Observer) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(title-Observer) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(title-Observer) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6bo63epg-6"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6bo63epg-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6bo63epg-6"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6bo63epg-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6bo63epg-6"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6bo63epg-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6bo63epg-6"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6bo63epg-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ae2a5lwh-7"] { view-transition-name: image-Strategy; }@layer astro { ::view-transition-old(image-Strategy) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(image-Strategy) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(image-Strategy) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(image-Strategy) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ae2a5lwh-7"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ae2a5lwh-7"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ae2a5lwh-7"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ae2a5lwh-7"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ae2a5lwh-7"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ae2a5lwh-7"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ae2a5lwh-7"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ae2a5lwh-7"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-6bo63epg-8"] { view-transition-name: title-Strategy; }@layer astro { ::view-transition-old(title-Strategy) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(title-Strategy) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(title-Strategy) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(title-Strategy) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6bo63epg-8"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6bo63epg-8"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6bo63epg-8"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6bo63epg-8"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6bo63epg-8"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6bo63epg-8"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6bo63epg-8"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6bo63epg-8"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ae2a5lwh-9"] { view-transition-name: image-State; }@layer astro { ::view-transition-old(image-State) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(image-State) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(image-State) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(image-State) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ae2a5lwh-9"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ae2a5lwh-9"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ae2a5lwh-9"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ae2a5lwh-9"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ae2a5lwh-9"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ae2a5lwh-9"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ae2a5lwh-9"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ae2a5lwh-9"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-6bo63epg-10"] { view-transition-name: title-State; }@layer astro { ::view-transition-old(title-State) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(title-State) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(title-State) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(title-State) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6bo63epg-10"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6bo63epg-10"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6bo63epg-10"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6bo63epg-10"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6bo63epg-10"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6bo63epg-10"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6bo63epg-10"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6bo63epg-10"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ae2a5lwh-11"] { view-transition-name: image-Bridge; }@layer astro { ::view-transition-old(image-Bridge) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(image-Bridge) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(image-Bridge) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(image-Bridge) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ae2a5lwh-11"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ae2a5lwh-11"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ae2a5lwh-11"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ae2a5lwh-11"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ae2a5lwh-11"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ae2a5lwh-11"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ae2a5lwh-11"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ae2a5lwh-11"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-6bo63epg-12"] { view-transition-name: title-Bridge; }@layer astro { ::view-transition-old(title-Bridge) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(title-Bridge) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(title-Bridge) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(title-Bridge) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6bo63epg-12"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6bo63epg-12"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6bo63epg-12"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6bo63epg-12"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6bo63epg-12"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6bo63epg-12"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6bo63epg-12"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6bo63epg-12"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-ae2a5lwh-13"] { view-transition-name: image-Decorator; }@layer astro { ::view-transition-old(image-Decorator) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(image-Decorator) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(image-Decorator) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(image-Decorator) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ae2a5lwh-13"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ae2a5lwh-13"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ae2a5lwh-13"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ae2a5lwh-13"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-ae2a5lwh-13"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-ae2a5lwh-13"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-ae2a5lwh-13"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-ae2a5lwh-13"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-6bo63epg-14"] { view-transition-name: title-Decorator; }@layer astro { ::view-transition-old(title-Decorator) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(title-Decorator) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(title-Decorator) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(title-Decorator) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6bo63epg-14"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6bo63epg-14"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6bo63epg-14"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6bo63epg-14"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6bo63epg-14"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6bo63epg-14"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6bo63epg-14"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6bo63epg-14"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head> <body> <div class="fixed inset-0 -z-10 h-screen w-full bg-white bg-[linear-gradient(to_right,#ececec_1px,transparent_1px),linear-gradient(to_bottom,#ececec_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>  <header class="p-4 border-b-2 border-b-slate-800"> <h1 class="text-5xl font-bold text-center flex flex-col gap-0 pb-4 text-gray-800"> <p class="">Patrones de diseño</p> <span class="text-xl lowercase leading-[.5]">EN</span> <p class="text-gray-600">
+JAVASCRIPT <span class="text-black">y</span> TYPESCRIPT
+</p> </h1> <p class="max-w-[800px] text-sm m-auto text-pretty text-gray-700">Los patrones de diseño (design patterns) son soluciones habituales a problemas comunes en el diseño de software. Cada patrón es como un plano que se puede personalizar para resolver un problema de diseño particular de tu código.</p> </header> <main class="p-4 flex flex-col gap-8"> <section class="max-w-[800px] m-auto"> <h2 class="text-3xl font-bold text-center text-gray-800 underline mb-4">Patrones de tipo Creacional</h2> <div class="content grid grid-cols-2 gap-8"> <a href="Singleton"> <article class="flex gap-2 cursor-pointer py-4 px-2 hover:shadow-lg transition-all duration-200 group"> <picture class="min-w-[100px] h-auto aspect-square group-hover:scale-110 transition-all duration-200"> <img src="./src/assets/images/singleton.png" alt="Imagen del patron Singleton" data-astro-transition-scope="astro-ae2a5lwh-1"> </picture> <div class="content line-clamp-5 text-justify"> <h3 class="text-xl font-bold text-gray-700" data-astro-transition-scope="astro-6bo63epg-2">Singleton</h3> <p class="text-sm text-gray-800">Tecnica para crear objetos 
+ Tiene un proposito. hacer que solo exista una intancia por cada clase 
+ Asi no se creara otra instancia y nos devolvera la que ya existe en memoria 
+ Asi si tenemos una clase que nosotros sabemos que no va cambiar y no estar ocupando tanta memoria 
+ Se puede usar cuando la persistencia de la informacion del objeto nunca va cambiar puede ser un calendario ya que los dias de la semana nunca cambiaran.</p> </div> </article> </a><a href="Builder"> <article class="flex gap-2 cursor-pointer py-4 px-2 hover:shadow-lg transition-all duration-200 group"> <picture class="min-w-[100px] h-auto aspect-square group-hover:scale-110 transition-all duration-200"> <img src="./src/assets/images/builder.png" alt="Imagen del patron Builder" data-astro-transition-scope="astro-ae2a5lwh-3"> </picture> <div class="content line-clamp-5 text-justify"> <h3 class="text-xl font-bold text-gray-700" data-astro-transition-scope="astro-6bo63epg-4">Builder</h3> <p class="text-sm text-gray-800">Ayuda a crear un objeto ya que aveces tenemos objetos que tienen muchos elementos en su construccion. Lo que hace builder es separar el contructor en un conjunto de metodos encadenados.
+ En teoria nos permite crear objetos con grandes cantidades de atributos pero solo asignando propiedades y sin estar mandando todos los atributos que necesita en un principio ya que puede ocurrrir que el objeto no siempre necesitara de todos los atributos.
+ El patron de diseño builder tambien tiene un director que basicamente este tendra las recetas o presentaciones para crear los objetos directamente ya tendra los pasos que tiene que seguir para crear un objeto complejo. -&gt; archivo **forms.js**
+ NOTA.- Hay que recordar que para esto cuando nosotros pasamos a un *objeto* como parametro entonces este va por referencia. Es decir que cualquier cambio que tenga dentro de la funcion entonces pasara en el mismo objeto y no asi en otro. Osea el cambio pasara en el mismo objeto y no se clonara o duplicara.
+ Basicamente con los directores nos ayudamos a tener un polimorfismo en los constructores en las clases ya que con JS solo podemos tener 1 por defecto pero gracias a los builders entonces podemos tener multiples.</p> </div> </article> </a> </div> </section><section class="max-w-[800px] m-auto"> <h2 class="text-3xl font-bold text-center text-gray-800 underline mb-4">Patrones de tipo Comportamiento</h2> <div class="content grid grid-cols-2 gap-8"> <a href="Observer"> <article class="flex gap-2 cursor-pointer py-4 px-2 hover:shadow-lg transition-all duration-200 group"> <picture class="min-w-[100px] h-auto aspect-square group-hover:scale-110 transition-all duration-200"> <img src="./src/assets/images/observer.png" alt="Imagen del patron Observer" data-astro-transition-scope="astro-ae2a5lwh-5"> </picture> <div class="content line-clamp-5 text-justify"> <h3 class="text-xl font-bold text-gray-700" data-astro-transition-scope="astro-6bo63epg-6">Observer</h3> <p class="text-sm text-gray-800">Un objeto puede tener propiedades y cuando uno de estas propiedades o estados cambien esta tendra observadores. Que notificara mediante el Subject que se podria decir que es un canal al cual se subscriben y cuando las props en el objeto cambien se hara una notificacion.
+ Y cada canal ira notificando a cada clase con una accion distinta depende el cambio de estado.
+ Basicamente es como funciona la mayoria de frameworks del frontend para tener comportamientos singulares dependiendo del observador.
+ Basicamente es tener un Subject que es el canal en el que iremos subscribiendo a nuestros observadores que podria ser etiquetas html o clases o cualquier otra cosa en el cual en nuestro subject dependiendo de un estado que tengamos cuando este cambie nosotros notifiquemos a los observadores de este cambio y hacer una accion dependiendo del sistema para que actue de una u otra forma.
+ Podria ser el caso de una venta que dependiendo de los productos en una vista nosotros mostremos los productos y en otra podria ser el total segun cambie el estado del carrito.</p> </div> </article> </a><a href="Strategy"> <article class="flex gap-2 cursor-pointer py-4 px-2 hover:shadow-lg transition-all duration-200 group"> <picture class="min-w-[100px] h-auto aspect-square group-hover:scale-110 transition-all duration-200"> <img src="./src/assets/images/strategy.png" alt="Imagen del patron Strategy" data-astro-transition-scope="astro-ae2a5lwh-7"> </picture> <div class="content line-clamp-5 text-justify"> <h3 class="text-xl font-bold text-gray-700" data-astro-transition-scope="astro-6bo63epg-8">Strategy</h3> <p class="text-sm text-gray-800">Nos ayuda a tener comportamiento distinto en un objeto sin tener que modificar el contexto inicial
+ Regularmente necesitamos este comportamiento cuando hacemos calculos en venta o comportamientos en el front cuando las vistas tienen diferentes comportamientos depende de un combobox
+ El objetivo es entender que se puede escalar con el patron strategy y no estar haciendo mucho uso de un switch con muchos calculos o multiples ifs
+ Para un mejor uso de strategy basicamente vamos sobreescribiendo la clase que tenemos con nuevas estrategias en los metodos y esto funciona de mejor manera con ts ya que teniendo las interfaces obligamos a las clases que implementen esa interfaz si o si deban cumplir ese contrato.</p> </div> </article> </a><a href="State"> <article class="flex gap-2 cursor-pointer py-4 px-2 hover:shadow-lg transition-all duration-200 group"> <picture class="min-w-[100px] h-auto aspect-square group-hover:scale-110 transition-all duration-200"> <img src="./src/assets/images/state.png" alt="Imagen del patron State" data-astro-transition-scope="astro-ae2a5lwh-9"> </picture> <div class="content line-clamp-5 text-justify"> <h3 class="text-xl font-bold text-gray-700" data-astro-transition-scope="astro-6bo63epg-10">State</h3> <p class="text-sm text-gray-800">Se podria decir que tendremos comportamiento de tipo estado. Y este estado podra ser compartido es similar al de estrategia.
+ Basicamente este patron nos ayuda a que dependiendo del estado que nosotros le mandemos entonces este podra tener uno u otro comportamiento diferente.</p> </div> </article> </a> </div> </section><section class="max-w-[800px] m-auto"> <h2 class="text-3xl font-bold text-center text-gray-800 underline mb-4">Patrones de tipo Estructura</h2> <div class="content grid grid-cols-2 gap-8"> <a href="Bridge"> <article class="flex gap-2 cursor-pointer py-4 px-2 hover:shadow-lg transition-all duration-200 group"> <picture class="min-w-[100px] h-auto aspect-square group-hover:scale-110 transition-all duration-200"> <img src="./src/assets/images/bridge.png" alt="Imagen del patron Bridge" data-astro-transition-scope="astro-ae2a5lwh-11"> </picture> <div class="content line-clamp-5 text-justify"> <h3 class="text-xl font-bold text-gray-700" data-astro-transition-scope="astro-6bo63epg-12">Bridge</h3> <p class="text-sm text-gray-800">Este patron es un puente separando una implementacion de una clase. Tendremos una abstraccion y una implementacion.
+ El implementador va ser el funcionamiento nativo el funcionamiento mas pequeño. Este sera usado por una abstraccion que podria ser una interfaz o una clase. 
+ La abstraccion sera mas implementado al modelo de negocio y el implementador sera mas cercano a situciones en especifico. 
+ Se parece a strategy y a state pero es diferente.
+ Basicamente si tendremos funcionamiento similar en clases podriamos nosotros craer una clase que maneraja esa misma logica respecto a la ejecucion de funciones y al recibo de parametros pero segun nosotros mandemos en el contructor un nuevo objeto pues cambiara el comportamiento que se tenga.</p> </div> </article> </a><a href="Decorator"> <article class="flex gap-2 cursor-pointer py-4 px-2 hover:shadow-lg transition-all duration-200 group"> <picture class="min-w-[100px] h-auto aspect-square group-hover:scale-110 transition-all duration-200"> <img src="./src/assets/images/decorator.png" alt="Imagen del patron Decorator" data-astro-transition-scope="astro-ae2a5lwh-13"> </picture> <div class="content line-clamp-5 text-justify"> <h3 class="text-xl font-bold text-gray-700" data-astro-transition-scope="astro-6bo63epg-14">Decorator</h3> <p class="text-sm text-gray-800">Es un patron que nos soluciona como estaran estructuradas las clases y como estas se conforman unas con otras.
+ Viene a solucionar cuando tenemos mucha funcionalidad jerarquicamente.
+ El decorador reducira la jerarquizacion haciendo un envoltorio de funcionalidades.
+ Asi si quieremos añadir funcionalidades haremos un envoltorio de funcionalidades asi conforme queramos añadir en lugar de heredar solo haremos un envoltorio sin tener que jerarquizar.
+ Basicamente es envolver funcionamiento sobre funcionamiento asi tendremos el comportamiento de herencia multiple pero de otra forma.</p> </div> </article> </a> </div> </section> </main> <br><br><br><br><br><br><br><br><br><br>  </body></html> 
